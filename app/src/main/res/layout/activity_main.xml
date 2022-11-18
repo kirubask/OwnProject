@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <ImageView
+      android:foreground="@drawable/foregrounddesign"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:src="@drawable/splashscreen"
+      android:scaleType="centerCrop">
+
+  </ImageView>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/lobster"
+      android:id="@+id/my_restraunt"
+      android:text="My Restraunt App "
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="33sp"
+      app:flow_verticalBias=".4"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"></TextView>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/welcome_quote"
+      android:text="HELLO! EXPLORER YOUR DREAM FOOD"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:textColor="@color/white"
+      android:textStyle="bold"
+      app:layout_constraintTop_toBottomOf="@+id/my_restraunt"
+      android:textAlignment="center">
+
+  </TextView>
+
+  <Button
+      android:id="@+id/register_btn"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:backgroundTint="@color/red"
+      android:fontFamily="sans-serif"
+      android:text="Register"
+      android:textAllCaps="false"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/welcome_quote"
+      app:layout_constraintWidth_percent=".8">
+
+  </Button>
+
+  <TextView
+      android:id="@+id/sign_btn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="sans-serif-black"
+      android:text="signIn"
+      android:textColor="@color/white"
+      android:textSize="20sp"
+
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/register_btn"></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
